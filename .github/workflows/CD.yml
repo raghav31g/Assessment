@@ -23,7 +23,7 @@ jobs:
       run: docker build -t raghav3105/assessment:latest .
 
     - name: Docker Login
-      run: echo "${{ secrets.Assessment_pass }}" | docker login -u "${{ secrets.Assessment_username }}" --password-stdin
+      run: echo "${{ secrets.TEST_PASSWORD }}" | docker login -u "${{ secrets.TEST_USERNAME }}" --password-stdin
     
     - name: Login successful
       run: echo "Login to Docker Hub successful"
